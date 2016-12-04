@@ -1,0 +1,176 @@
+html, body, h1, form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+	background: #ffffff;
+	color: #111111;
+	font-family:arial, helvetica;
+	/*padding: 20px;*/
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	
+	.form_class {
+
+	/*background: #206653;*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	/*padding: 20px;*/
+	width: 320px;
+}
+		
+.form_class fieldset {
+	border: none;
+	margin-bottom: 10px;
+}
+		
+.form_class fieldset:last-of-type {
+	margin-bottom: 0;
+}
+			
+.form_class legend {
+	color: #DAD498;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-shadow: 0 1px 1px #c0d576;
+}
+	
+.form_class fieldset fieldset legend {
+	color: #111111;
+	font-size: 13px;
+	font-weight: normal;
+	padding-bottom: 0;
+}
+
+.form_class ol li {
+	background: #89A7BB;
+	border-color: #B7D1C9;
+	border-style: solid;
+	border-width: 2px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+						
+.form_class ol ol li {
+	background: none;
+	border: none;
+	float: left;
+}
+		
+.form_class label {
+	float: left;
+	font-size: 13px;
+	width: 90px;
+}
+				
+.form_class fieldset fieldset label {
+	background:none no-repeat left 50%;
+	line-height: 20px;
+	padding: 0 0 0 30px;
+	width: auto;
+}
+					
+				
+				
+				
+.form_class input:not([type=radio]),
+.form_class textarea {
+	background: #FFFFFF;
+	border: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	font: italic 13px helvetica, arial;
+	outline: none;
+	padding: 5px;
+	width: 110px;
+}
+					
+.form_class input:not([type=submit]):focus,
+.form_class textarea:focus {
+	background: #eaeaea;
+}
+					
+.form_class input[type=radio] {
+	float: left;
+	margin-right: 5px;
+}
+						
+.form_class button {
+	background: #3E6F90;
+	border: none;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	color: #FFFFFF;
+	display: inline-block;
+	font: 18px Halvetic, arial;
+	letter-spacing: 1px;
+	margin: auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding: 7px 25px;
+	text-shadow: 0 1px 1px #000000;
+	/*text-transform: uppercase;*/
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+					
+.form_class button:hover {
+	background: #133E32;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.form_class img{
+	padding: 10px;
+	display: block;
+	margin: auto;
+}
+#add_options,#get_started,#add_info,#review,#call {
+	background: #3E6F90;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	padding: 20px;
+	width: auto;
+	margin-bottom:5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #B7D1C9;
+}
+a {text-decoration: none;}
+
+.hidden { display: none; }
+.unhidden { display: block; }
+
+#designed-by {
+	color: #11604A;
+	text-decoration: underline;
+	margin-left: 50px;
+	font-size: 13px;
+}
+	
+p.small-print {
+    font-style: italic;
+    font-size:12px;
+	line-height:14px;
+}

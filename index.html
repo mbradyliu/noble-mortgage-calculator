@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+		
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1 user-scalable=no,width = 320" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+	
+	<title>Noble Advisor</title>
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>
+	<link rel="stylesheet" href="master.css" type="text/css">
+	<script src="func.js"></script>
+	<script src="app_nav.js"></script>
+
+</head>
+<body>
+<div id="shell" name="shell" class="form_class">
+<a id="Noble-link"  href="http://www.noblemoney.com/" target="_target"><img id="logo" src="images/Noble-logo_260x180.png" /></a>
+
+<!--beginning of page1 div-->	
+<div id="page1" name="page1" style="display: block">
+<!--beginning of first section div-->	
+<div id="first_section" name="first_section">
+	
+		
+
+	<!--beginning of get_started div section-->
+	<div id="get_started">
+        <form id="step1" name="step1">
+            <ol>
+			    <legend>Step 1: Getting Started</legend>
+
+				<li>
+                  <label for="price">Price</label>
+
+                  $ <input id="price" name="price" type="number" placeholder="Purchase Price" required>
+                </li>
+                <li>
+                  <label for="cost">Rehab Cost</label>
+                  $ <input id="cost" name="cost" type="number" placeholder="Repair Costs" required>
+                </li>
+                <li>
+                  <label for="ARV">ARV</label>
+
+                  $ <input id="ARV" name="ARV" type="number" placeholder="Sale Price" onblur="upDateVars()" required>
+                </li>
+                <li>
+                  <label for="percentArvVar">Will this be a:</label><br>
+                   <input id="percentArvVar" name="percentArvVar" type="radio" onClick="calculateLoanAmount()" value=0.7>Flip <br>
+                   <input id="percentArvVar" name="percentArvVar" type="radio" onClick="calculateLoanAmount()" value=0.75>Rehab to perm <br>
+                </li>
+                <li>
+                  <label for="period">Term:</label><br>
+                   <input id="period" name="period" type="radio" value=0.03>6 Months <br>
+                   <input id="period" name="period" type="radio" value=0.04>1 Year <br>
+                </li>
+			    <li id="loanVar" name="loanVar">
+Loan Amount: 
+			    </li>
+
+			</ol>
+	</div>
+	<!--end	of get_started div-->
+
+
+		<fieldset>
+	<!--beginning div add_options-->
+	
+	<div id="add_options">
+		
+			
+		<legend id="open_drop">Additional Information (optional)</legend>
+			<div id="inside_add">
+        <ol>
+
+			<li>
+                <label for="nameVar">Name</label>
+                <input id="nameVar" name="nameVar" type="text" placeholder="John Smith"></input>
+			</li>
+			<li class="inner_list">
+                <label for="addressVar">Address</label>
+                <textarea id="addressVar" name="addressVar" rows="3" placeholder="Contact Address"></textarea>
+			</li>
+			<li>
+                <label for="emailVar">Email</label>
+                <input id="emailVar" name="emailVar" type="email" placeholder="jsmith@example.com"></input>
+			</li>
+			<li>
+                <label for="phoneVar">Phone</label>
+                <input id="phoneVar" name="phoneVar" type="text" placeholder="(214) 555-5555"></input>
+			</li>	
+                
+        </ol>
+	</div>	
+	</div>
+	<!--end of add_options div-->
+			</fieldset>
+
+
+		</form>
+			<fieldset >
+			<center>
+			<button type="button" onclick="changePage('page1','page1')" style="visibility:hidden;">Back</button>
+			<button type="button" onclick="secondNext('page1','page3')">Next</button>
+			</center>
+			</fieldset>
+</div>
+<!--end of first_section div-->	
+
+</div>
+<!--end of page1 div-->	
+
+
+
+	
+			
+			
+<!--begin page2 div-->
+<div id="page2" style="display: none;">
+
+	<!--begin second_section div-->
+<div id="second_section">
+
+<!--begin second_step div-->
+<div id="second_step" name="second_step">	
+	<form id="step2">
+	<div id="add_info">
+		</div>
+		<fieldset>
+		<center>
+		<button type="button" onclick="changePage('page2','page1')">Back</button>
+		<button type="button" onclick="secondNext('page2','page3')">Next</button>
+		</center>
+		</fieldset>
+	</form>
+	
+</div>
+<!--end second_step div-->
+</div>
+<!--end second_section div-->
+	
+
+</div>
+<!--end page2 div-->
+
+
+
+
+
+
+
+<!--begin page3 div-->
+<div id="page3" style="display: none;">
+
+	<form id="step3">
+	<div id="review">
+		<ol>
+		<legend>Step 2: Review</legend>
+                	
+		<li id="out1" name="out1">			  
+		</li>
+		<li id="out2" name="out2">				  
+		</li>
+		<li id="out3" name="out3">				  
+		</li>
+		<li id="out4" name="out4">				  
+		</li>
+		<li id="out5" name="out5">				  
+		</li>
+		<li id="out6" name="out6">				  
+		</li>
+		<li id="out7" name="out7">				  
+		</li>
+		<li id="out17" name="out17" class="small-print"><p class="small-print">*Additional $500 application fee<br />
+**Assumes seller paid title policy, estimate only<br />
+***Does not include interest payments</p>
+		<p class="small-print">This application is for estimation and educational purposes only - the resulting numbers, values, figures, and costs, should not be relied on because they are not guaranteed to be accurate.</p></li>
+						
+			</ol>
+		</div>
+		<fieldset>
+		<center>
+		<button type="button" onclick="changePage('page3','page1')">Back</button>
+		<button type="button" onclick="emailForm()">Email</button>
+		<button type="button" onclick="changePage('page3','page4')">Call</button>
+		</center>
+		</fieldset>
+	</form>
+	
+</div>
+<!--end page3 div-->
+
+
+
+<!--begin page4 div-->
+<div id="page4" style="display: none;">
+ 
+    <form id="callpage">
+    <div id="call">
+		<ol>
+			<li>Tel: (713) 680-8100</li>
+			<li>eFax: (832) 201-9242</li>
+		</ol>
+    </div>
+		<fieldset>
+		<center>
+		<button type="button" onclick="changePage('page4','page3')">Back</button>
+		</center>
+		</fieldset>
+    </form>
+
+</div>
+<!--end page4 div-->
+
+
+<a id="designed-by"  href="http://brady-liu.com" target="_target">Designed by Brady-Liu Technologies LLC.</a>
+
+
+</div>
+<!--end form_class div-->
+	</body>

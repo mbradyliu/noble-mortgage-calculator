@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.noblemortgagecalculator"
+        version   = "1.0.0">
+
+    <name>Noble Mortgage Calculator</name>
+
+    <description>
+        Noble Mortgage Calculator
+    </description>
+
+    <author href="http://brady-liu.com" email="support@brady-liu.com">
+        Brady-Liu Team
+    </author>
+
+    <!-- Define the main entry-point to the application -->
+    <content src="index.html" />
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="DisallowOverscroll"         value="true" />
+    <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-minSdkVersion"      value="14" />
+
+    <!-- Define a specific version of PhoneGap to build into your app. -->
+    <!-- <preference name="phonegap-version"       value="cli-6.0.0" /> -->
+
+    <!-- Plugins -->
+    <!-- Core plugins -->
+    <plugin name="cordova-plugin-battery-status"      source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-camera"              source="npm" spec="~2.1.1" />
+    <plugin name="cordova-plugin-media-capture"       source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-console"             source="npm" spec="~1.0.2" />
+    <plugin name="cordova-plugin-contacts"            source="npm" spec="~2.0.1" />
+    <plugin name="cordova-plugin-device"              source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-device-motion"       source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-device-orientation"  source="npm" spec="~1.0.2" />
+    <plugin name="cordova-plugin-dialogs"             source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-file"                source="npm" spec="~4.1.1" />
+    <plugin name="cordova-plugin-file-transfer"       source="npm" spec="~1.5.0" />
+    <plugin name="cordova-plugin-geolocation"         source="npm" spec="~2.1.0" />
+    <plugin name="cordova-plugin-globalization"       source="npm" spec="~1.0.3" />
+    <plugin name="cordova-plugin-inappbrowser"        source="npm" spec="~1.3.0" />
+    <plugin name="cordova-plugin-media"               source="npm" spec="~2.2.0" />
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-splashscreen"        source="npm" spec="~3.2.1" />
+    <plugin name="cordova-plugin-statusbar"           source="npm" spec="~2.1.2" />
+    <plugin name="cordova-plugin-vibration"           source="npm" spec="~2.1.0" />
+    <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
+
+    <!-- Define app icon and splashscreen for each platform. -->
+    <platform name="android">
+        <icon platform="android" qualifier="ldpi" src="res/icons/android/icon-36-ldpi.png"/>
+        <icon platform="android" qualifier="mdpi" src="res/icons/android/icon-48-mdpi.png"/>
+        <icon platform="android" qualifier="hdpi" src="res/icons/android/icon-72-hdpi.png"/>
+        <icon platform="android" qualifier="xhdpi" src="res/icons/android/icon-96-xhdpi.png"/>
+        <icon platform="android" qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png"/>
+        <icon platform="android" qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png"/>
+        <splash platform="android" qualifier="ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
+        <splash platform="android" qualifier="mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
+        <splash platform="android" qualifier="hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
+        <splash platform="android" qualifier="xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
+    </platform>
+
+    <platform name="ios">
+        <icon platform="ios" src="res/icons/ios/icon-small.png" width="29" height="29" />
+        <icon platform="ios" src="res/icons/ios/icon-small-2x.png" width="58" height="58" />
+        <icon platform="ios" src="res/icons/ios/icon-40.png" width="40" height="40" />
+        <icon platform="ios" src="res/icons/ios/icon-40-2x.png" width="80" height="80" />
+        <icon platform="ios" src="res/icons/ios/icon-50.png" width="50" height="50" />
+        <icon platform="ios" src="res/icons/ios/icon-50-2x.png" width="100" height="100" />
+        <icon platform="ios" src="res/icons/ios/icon.png" width="57" height="57" />
+        <icon platform="ios" src="res/icons/ios/icon-2x.png" width="114" height="114" />
+        <icon platform="ios" src="res/icons/ios/icon-60.png" width="60" height="60" />
+        <icon platform="ios" src="res/icons/ios/icon-60-2x.png" width="120" height="120" />
+        <icon platform="ios" src="res/icons/ios/icon-60-3x.png" width="180" height="180" />
+        <icon platform="ios" src="res/icons/ios/icon-72.png" width="72" height="72" />
+        <icon platform="ios" src="res/icons/ios/icon-72-2x.png" width="144" height="144" />
+        <icon platform="ios" src="res/icons/ios/icon-76.png" width="76" height="76" />
+        <icon platform="ios" src="res/icons/ios/icon-76-2x.png" width="152" height="152" />
+        <splash platform="ios" src="res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
+        <splash platform="ios" src="res/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
+        <splash platform="ios" src="res/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
+        <splash platform="ios" src="res/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
+        <splash platform="ios" src="res/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
+        <splash platform="ios" src="res/screens/ios/screen-ipad-portrait.png" width="768" height="1024" />
+        <splash platform="ios" src="res/screens/ios/screen-ipad-portrait-2x.png" width="1536" height="2048" />
+    </platform>
+
+    <!--
+        Define access to external domains.
+        <access />            - a blank access tag denies access to all external resources.
+        <access origin="*" /> - a wildcard access tag allows access to all external resource.
+        Otherwise, you can specify specific domains:
+    -->
+    <access origin="*" />
+    <!--
+       <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
+       <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
+       <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
+    -->
+
+    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
+    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+</widget>
