@@ -25,7 +25,8 @@ body {
 	-khtml-border-radius: 5px;
 	border-radius: 5px;
 	/*padding: 20px;*/
-	width: 320px;
+	/*width: 320px;*/
+	margin: auto;
 }
 		
 .form_class fieldset {
