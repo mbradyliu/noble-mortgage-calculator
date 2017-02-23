@@ -103,7 +103,7 @@ function upDateVars() {
 function calculateLoanAmount(){
     ARV = eval(document.getElementsByName("ARV")[0].value);
     percentArvVar = getRadioValue('percentArvVar');
-    loanAmount = ARV * percentArvVar;
+    loanAmount = (ARV * percentArvVar).toFixed(2); // JJH cut down to two digits after the decimal point
     document.getElementById("loanVar").innerHTML="Loan Amount: $" + loanAmount;
 }
 /*end loan calculator*/
@@ -126,7 +126,7 @@ function calculateLoanAmount(){
 
 function emailForm(){
 	var src = document.referrer;
-	var email = "info@noblemoney.com";
+	var email = "info@noblemoney.com,clenz@noblemoney.com";
 	var b1 = '%3Cb%3E'; 
 	var b2 = '%3C%2Fb%3E'; 
 	var br = '%3Cbr%3E'; 
