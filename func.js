@@ -134,17 +134,17 @@ function emailForm(){
 	var b2 = ''; // bold off, remove
 	var br = '%0D%0A'; // carriage return is now \r\n
 	br = b1+br;
-	var email_body = b1+'Purchase Price: $'+b2+purchasePrice+
-					br+'Rehab Cost: $'+b2+rehabCost+
-					br+'ARV: $'+b2+ARV+
-                    br+'Loan Amount: $'+b2+loanAmount+
-                    br+"Lender's Fees: $'"+b2+lendersFees+
-                    br+'Other Closing Costs: $'+b2+otherClosingCosts+
-                    br+'Total Closing Costs: $'+b2+totalClosingCosts+
-                    br+'Estimated Funds Due at Closing: $'+b2+estimatedFundsDueAtClosing+
-                    br+'Monthly Loan Payments: $'+b2+monthlyLoanPayments+
-                    br+'Profit for Flip: $'+b2+profitForFlip+
-                    br+'Equity Capture with Rental: $'+b2+equityCaptureWithRental+
+	var email_body = b1+'Purchase Price: $'+b2+purchasePrice.toFixed(2)+
+					br+'Rehab Cost: $'+b2+rehabCost.toFixed(2)+
+					br+'ARV: $'+b2+ARV.toFixed(2)+
+                    br+'Loan Amount: $'+b2+loanAmount.toFixed(2)+
+                    br+"Lender's Fees: $'"+b2+lendersFees.toFixed(2)+
+                    br+'Other Closing Costs: $'+b2+otherClosingCosts.toFixed(2)+
+                    br+'Total Closing Costs: $'+b2+totalClosingCosts.toFixed(2)+
+                    br+'Estimated Funds Due at Closing: $'+b2+estimatedFundsDueAtClosing.toFixed(2)+
+                    br+'Monthly Loan Payments: $'+b2+monthlyLoanPayments.toFixed(2)+
+                    br+'Profit for Flip: $'+b2+profitForFlip.toFixed(2)+
+                    br+'Equity Capture with Rental: $'+b2+equityCaptureWithRental.toFixed(2)+
 					br+'****Additional Information****'+b2+
 					br+'Name: '+b2+nameVar+
 					br+'Address:'+b2+addressVar+
