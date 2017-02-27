@@ -127,9 +127,12 @@ function calculateLoanAmount(){
 function emailForm(){
 	var src = document.referrer;
 	var email = "info@noblemoney.com,clenz@noblemoney.com";
-	var b1 = '%3Cb%3E'; 
-	var b2 = '%3C%2Fb%3E'; 
-	var br = '%3Cbr%3E'; 
+//	var b1 = '%3Cb%3E'; 
+//	var b2 = '%3C%2Fb%3E'; 
+//	var br = '%3Cbr%3E'; 
+	var b1 = ''; // bold on, remove
+	var b2 = ''; // bold off, remove
+	var br = '%0D%0A'; // carriage return is now \r\n
 	br = b1+br;
 	var email_body = b1+'Purchase Price: $'+b2+purchasePrice+
 					br+'Rehab Cost: $'+b2+rehabCost+
